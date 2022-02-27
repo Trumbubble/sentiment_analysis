@@ -24,10 +24,8 @@
                         var neutral1=0;    
                         $('#keyword1title').text("Keyword 1:"+keyword1+" analysis for negative, neutral and positive tweets");
                         $('#positive1').text("Positive:"+positivity1+"%");
-                        $('#neutral1').text("Neutral:"+neutral1+"%");
                         $('#negative1').text("Negative:"+negativity1+"%");
                         $( "#progressbar1_negative" ).width(negativity1+"%");
-                        $( "#progressbar1_neutral" ).width(neutral1+"%");
                         $( "#progressbar1_positive" ).width(positivity1+"%");
                         })};
                         if(keyword2!='') {
@@ -40,10 +38,8 @@
                         var neutral2=0;    
                         $('#keyword2title').text("Keyword 2:"+keyword2+" analysis for negative, neutral and positive tweets");
                         $('#positive2').text("Positive:"+positivity2+"%");
-                        $('#neutral2').text("Neutral:"+neutral2+"%");
                         $('#negative2').text("Negative:"+negativity2+"%");
                         $( "#progressbar2_negative" ).width(negativity2+"%");
-                        $( "#progressbar2_neutral" ).width(neutral2+"%");
                         $( "#progressbar2_positive" ).width(positivity2+"%");
                 
                         })};
@@ -116,25 +112,18 @@
                     <button id="negative1" type="button" class="btn btn-danger">
                         Negative <span class="badge badge-danger"></span>
                     </button>
-                    <button id="neutral1" type="button" class="btn btn-secondary">
-                        Neutral <span class="badge badge-secondary"></span>
-                    </button>
                     <button id="positive1" type="button" class="btn btn-primary">
                         Positive <span class="badge badge-primary"></span>
                     </button>
                     <p></p>
                     <div class="progress" style="width:50%">
-                        <div id="progressbar1_negative" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div id="progressbar1_neutral" class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div id="progressbar1_positive" class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div id="progressbar1_negative" class="progress-bar btn-danger" role="progressbar" style="width: 0%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div id="progressbar1_positive" class="progress-bar btn-primary" role="progressbar" style="width: 0%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <p></p>
                     <h1><span id="keyword2title" class="badge badge-secondary" style="color:grey">Keyword 2 analysis</span></h1>
                         <button id="negative2" type="button" class="btn btn-danger">
                             Negative <span class="badge badge-danger"></span>
-                        </button>
-                        <button id="neutral2" type="button" class="btn btn-secondary">
-                            Neutral <span class="badge badge-secondary"></span>
                         </button>
                         <button id="positive2" type="button" class="btn btn-primary">
                             Positive <span class="badge badge-primary"></span>
@@ -142,7 +131,7 @@
                         <p></p>
                         <div class="progress" style="width:50%">
                             <div id="progressbar2_negative" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div id="progressbar2_neutral" class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            
                             <div id="progressbar2_positive" class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     <p>&nbsp;</p>
