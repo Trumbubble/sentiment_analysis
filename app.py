@@ -27,7 +27,13 @@ def text():
 
     status = classify_tweet(text)
 
-    return Response(json.dumps(status), mimetype = 'application/json')
+    return_status = 0
+    if status == 'Positive':
+        return_status =1
+    else:
+        return_status = -1
+
+    return Response(json.dumps(return_status), mimetype = 'application/json')
 
 
 def scrape(keyword):
