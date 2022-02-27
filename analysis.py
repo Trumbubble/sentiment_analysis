@@ -1,3 +1,4 @@
+import pickle
 import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.corpus import twitter_samples, stopwords, wordnet
@@ -103,7 +104,16 @@ def train_model():
    
     return classifier
 
-classifier = train_model()
+# run once
+# classifier = train_model()
+# file = open("classifier.pickle", "wb")
+# pickle.dump(classifier, file)
+# file.close()
+
+file = open("classifier.pickle", "rb")
+classifier=pickle.load(file)
+file.close()
+
 
 def classify_tweet(custom_tweet):
     global classifier
