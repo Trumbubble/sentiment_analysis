@@ -19,8 +19,8 @@
                             url: "/tweets?keyword="+keyword1
                         }).then(function(data) {
                         var sum = data['positives'] + data['negatives']
-                        var positivity1=data['positives']/sum;
-                        var negativity1=data['negatives']/sum;
+                        var positivity1=data['positives']/sum * 100;
+                        var negativity1=data['negatives']/sum* 100;
                         var neutral1=0;    
                         $('#keyword1title').text("Keyword 1:"+keyword1+" analysis for negative, neutral and positive tweets");
                         $('#positive1').text("Positive:"+positivity1+"%");
@@ -35,8 +35,8 @@
                             url: "/tweets?keyword="+keyword2
                         }).then(function(data) {
                         var sum = data['positives'] + data['negatives']
-                        var positivity2=data['positives']/sum;
-                        var negativity2=data['negatives']/sum;
+                        var positivity2=data['positives']/sum* 100;
+                        var negativity2=data['negatives']/sum* 100;
                         var neutral2=0;    
                         $('#keyword2title').text("Keyword 2:"+keyword2+" analysis for negative, neutral and positive tweets");
                         $('#positive2').text("Positive:"+positivity2+"%");

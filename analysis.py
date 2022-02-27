@@ -13,7 +13,7 @@ nltk.download('stopwords')
 nltk.download('twitter_samples')
 nltk.download('omw-1.4')
 
-classifier = None
+
 # initialize
 stop_words = stopwords.words('english')
 
@@ -103,12 +103,13 @@ def train_model():
    
     return classifier
 
+classifier = train_model()
 
 def classify_tweet(custom_tweet):
     global classifier
 
-    if classifier is None:
-        classifier = train_model()
+    # if classifier is None:
+    #     classifier = train_model()
    
     custom_tokens = remove_noise_and_lemmatize(word_tokenize(custom_tweet))
 
