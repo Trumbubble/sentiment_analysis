@@ -39,7 +39,7 @@ def text():
 def scrape(keyword):
     client = tw.Client("AAAAAAAAAAAAAAAAAAAAAOi1ZgEAAAAAKK5rqPAvqm9VFqjAxqqAXZ6xG%2BI%3Du08ykMFwrAF42bkhz0j1f2dujys4HeviR6DKz01GRSzKCUNtFJ")
 
-    query = keyword
+    query = keyword + ' -is:retweet'
 
     tweets = client.search_recent_tweets(query=query,tweet_fields=['context_annotations', 'created_at'], max_results=100)
 
