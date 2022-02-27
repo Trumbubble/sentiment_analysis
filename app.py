@@ -43,7 +43,7 @@ def scrape(keyword):
     num_negative = 0
 
     for tweet in tweets.data:
-        if classify_tweet(tweet) == "Positive":
+        if classify_tweet(tweet.text) == "Positive":
             num_positive = num_positive + 1
         else:
             num_negative = num_negative + 1
