@@ -41,7 +41,7 @@ def scrape(keyword):
 
     query = keyword
 
-    tweets = client.search_recent_tweets(query=query,tweet_fields=['context_annotations', 'created_at'], max_results=10)
+    tweets = client.search_recent_tweets(query=query,tweet_fields=['context_annotations', 'created_at'], max_results=100)
 
     found_tweets = []
 
