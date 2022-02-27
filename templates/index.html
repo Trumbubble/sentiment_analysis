@@ -24,8 +24,8 @@
                             positivity1=0;
                             negativity1=0;
                         } else {
-                            positivity1=data['positives']/sum;
-                            negativity1=data['negatives']/sum;
+                            positivity1=data['positives']/sum * 100;
+                            negativity1=data['negatives']/sum * 100;
                         }
                         $('#total1').text("Total: "+sum);
                         var neutral1=0;    
@@ -45,8 +45,8 @@
                             positivity2=0;
                             negativity2=0;
                         } else {
-                            positivity2=data['positives']/sum;
-                            negativity2=data['negatives']/sum;
+                            positivity2=data['positives']/sum * 100;
+                            negativity2=data['negatives']/sum * 100;
                         }
                         $('#total2').text("Total: "+sum);
                         var neutral2=0;    
